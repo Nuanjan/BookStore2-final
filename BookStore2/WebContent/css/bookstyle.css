@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+padding: 25px 25px 25px 25px;
+border: 2px;
+border-color:#2b7a7b;
+	
+}
+.center {
+  width: 800px;
+}
+
+
+body{
+background-image: url("https://free4kwallpapers.com/uploads/originals/2015/10/10/sunshine-reflecting-off-the-mountains-onto-a-stream-reflecting-up-to-the-blue-ice-of-the-vatnajokull-ice-cave-in-iceland-by-einar-runar-sigurdsson-wallpaper.jpg");
+
+}

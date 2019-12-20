@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  justify-content: center;
+padding: 25px 25px 25px 25px;
+border: 2px;
+text-size=18px;
+color:white;
+
+	
+}
+.center {
+  width: 800px;
+}
+
+body{
+background-image: url("https://stmed.net/sites/default/files/black-mountain-wallpapers-27777-1226025.jpg");
+
+}
+.head{
+text-align: center;
+
+}

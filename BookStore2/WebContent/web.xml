@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Book store</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+   <servlet>
+    <description>Store Servlet</description>
+    <display-name>StoreServlet</display-name>
+    <servlet-name>StoreServlet</servlet-name>
+    <servlet-class>cit285.bookstore2.presentation.web.StoreServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreServlet</servlet-name>
+    <url-pattern>/StoreServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>Admin Servlet</description>
+    <display-name>AdminServlet</display-name>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>cit285.bookstore2.presentation.web.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/admin/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Customer Servlet</description>
+    <display-name>CustomerServlet</display-name>
+    <servlet-name>CustomerServlet</servlet-name>
+    <servlet-class>cit285.bookstore2.presentation.web.CustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerServlet</servlet-name>
+    <url-pattern>/customer/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Cart Servlet</description>
+    <display-name>CartServlet</display-name>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>cit285.bookstore2.presentation.web.CartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/cart/*</url-pattern>
+  </servlet-mapping>
+<servlet>
+    <description>LoginAdminServlet</description>
+    <display-name>LoginAdminServlet</display-name>
+    <servlet-name>LoginAdminServlet</servlet-name>
+    <servlet-class>cit285.bookstore2.presentation.web.LoginAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginAdminServlet</servlet-name>
+    <url-pattern>/LoginAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>LoginCustomerServlet</description>
+    <display-name>LoginCustomerServlet</display-name>
+    <servlet-name>LoginCustomerServlet</servlet-name>
+    <servlet-class>cit285.bookstore2.presentation.web.LoginCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginCustomerServlet</servlet-name>
+    <url-pattern>/LoginCustomerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>RegisterAdminServlet</description>
+    <display-name>RegisterAdminServlet</display-name>
+    <servlet-name>RegisterAdminServlet</servlet-name>
+    <servlet-class>cit285.bookstore2.presentation.web.RegisterAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterAdminServlet</servlet-name>
+    <url-pattern>/RegisterAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>RegisterCustomerServlet</description>
+    <display-name>RegisterCustomerServlet</display-name>
+    <servlet-name>RegisterCustomerServlet</servlet-name>
+    <servlet-class>cit285.bookstore2.presentation.web.RegisterCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterCustomerServlet</servlet-name>
+    <url-pattern>/RegisterCustomerServlet</url-pattern>
+  </servlet-mapping>
+   
+</web-app>
+</element>
